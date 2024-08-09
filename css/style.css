@@ -328,9 +328,14 @@ li {
     height: 491px;
     padding: 0 30px 0 48px;
 }
+.join-img {
+    height: 471px;
+}
 .join-img img{
-    width: 100%;
-    transform: translate(0px, 52px);
+    width: 94%;
+    position: absolute;
+    bottom: -9px;
+    right: 0px;
 }
 .join_text a img{
     filter: brightness(9);
