@@ -168,7 +168,7 @@ li {
     font-size: 18px;
 }
 .banner_img img{
-    margin-top: -47px;
+    margin: -47 auto 0;
 }
 .demo-btn_row{
     z-index: 99;
