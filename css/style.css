@@ -733,6 +733,9 @@ li {
    .contact-banner img{
     width: 100%;
    }
+   .choose-us__col {
+    width: 31%;
+   }
    
 }
 @media screen and (max-width:1150px){
@@ -753,6 +756,11 @@ li {
     }
     .banner-text p {
         font-size: 20px;
+    }
+    .works_col::after {
+        width: 73%;
+        height: 72px;
+        background-size: 100% 100%;
     }
 }
 
@@ -810,6 +818,66 @@ li {
     .footer_list a {
         padding-bottom: 8px;
     }
+    .header-schedule{
+        display: none;
+    }
+    .about_page__img img{
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+    .our-mission_sec {
+        margin: 80px 0;
+    }
+    .value_col{
+        margin-bottom: 30px;
+    }
+    .our-value_bg h2 {
+        font-size: 34px;
+    }
+    .value_col p {
+        padding-top: 16px;
+    }
+    .our-team_sec h2 {
+        font-size: 34px;
+    }
+    .team_img::after {
+        width: 100%;
+    }
+    .team h6 {
+        font-size: 22px;
+    }
+    .team p {
+        font-size: 16px;
+    }
+    .contact-banner img {
+        width: 84%;
+        margin: 0 auto;
+        display: block;
+    }
+    .choose-us__col {
+        width: 30%;
+        padding: 40px 17px;
+    }
+    .choose-us__col img{
+        width: 33%;
+    }
+    .choose-us__col h6 {
+        font-size: 20px;
+    }
+    .works_col h6 {
+        font-size: 18px;
+    }
+    .works_col p {
+        padding: 18px 0px 33px;
+    }
+    .faq-section {
+        margin: 80px auto;
+    }
+    .faq-section h2 {
+        font-size: 32px;
+    }
+
 }
 
 @media screen and (max-width:767px){
@@ -984,9 +1052,7 @@ li {
     .footer_list a {
         padding-bottom: 6px;
     }
-    .header-schedule{
-        display: none;
-    }
+    
     #navbarNav .active{
         width: fit-content;
     }
@@ -999,5 +1065,122 @@ li {
     .navbar-list {
         margin-top: 21px;
         gap: 11px;
+    }
+    
+    .mission_text h2 {
+        font-size: 28px;
+        padding-bottom: 10px !important;
+    }
+    .contact-banner_text h1 {
+        font-size: 28px;
+    }
+    .contact-banner_text p {
+        font-size: 16px;
+    }
+    .contact-banner{
+        padding: 50px 0 63px;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .about-banner_text{
+        margin-bottom: 20px;
+    }
+    .our-mission_sec {
+        margin: 60px 0;
+    }
+    .mission_text p {
+        font-size: 16px;
+    }
+    .about_page__img img {
+        width: 100%;
+    }
+    .our-value_bg {
+        padding: 50px 0;
+        border-radius: 50px;
+    }
+    .our-value_bg h2 {
+        font-size: 28px;
+    }
+    .value_col{
+        text-align: center;
+    }
+    .value_col img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+    .value_col h5 {
+        font-size: 22px;
+    }
+    .our-team_sec{
+        margin: 60px 0px;
+    }
+    .our-team_sec h2 {
+        font-size: 28px;
+    }
+    .our-team_row {
+        margin: 43px auto 0;
+    }
+    .team_img::after {
+        width: 90%;
+    }
+    .team h6 {
+        font-size: 18px;
+        padding: 8px 0 3px;
+    }
+    .team{
+        margin-bottom: 10px;
+    }
+    .contact-banner_text{
+        margin-bottom: 20px;
+    }
+    .contact-banner img {
+        width: 94%;
+    }
+    .choose-us__col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .choose-us__col img {
+        width: 25%;
+    }
+    .choose-us__col h6 {
+        font-size: 18px;
+    }
+    .how-works__Sec {
+        border-radius: 50px;
+    }
+    .how-works__Sec h2{
+        font-size: 28px;
+    }
+    .works_col{
+        width: 100%;
+    }
+    .works_col::after{
+        display: none;
+    }
+    .works_col a {
+        font-size: 16px;
+    }
+    .key-feature_textCol a {
+        font-size: 16px;
+    }
+    .policy_row{
+        flex-direction: column;
+    }
+    .listing{
+        width: 100%;
+    }
+    .text_list{
+        width: 100%;
+    }
+    .policy_row {
+        margin-top: 60px;
+    }
+    .listing ul li {
+        margin-bottom: 10px;
+    }
+    .text_list ul li {
+        font-size: 20px;
+        margin: 0 0px 7px 20px;
     }
 }
