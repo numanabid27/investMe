@@ -153,5 +153,45 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.text_list ul li');
+            const navLinks = document.querySelectorAll('.listing ul li a');
+
+          
+
+            const options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5  // Adjust threshold as needed
+            };
+
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active class from all links
+                        navLinks.forEach(link => {
+                            link.classList.remove('policyActive');
+                        });
+
+                        // Add active class to the current link
+                        const id = entry.target.id;
+                        const activeLink = document.querySelector(`a[href="#${id}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('policyActive');
+                        }
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }); 
+
+    </script>
+
+    </script>
+   
 </body>
 </html>
