@@ -953,7 +953,7 @@ li {
     }
     .banner::before {
         border-radius: 0px 0px 50px 50px;
-        height: 92vh;
+        height: 478px;
     }
     .partner-sec_col img {
         width: 100%;
