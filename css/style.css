@@ -114,6 +114,7 @@ li {
     color: var(--color-grey);
     font-size: 18px;
     font-family: 'SF-Pro-Display-Regular';
+    position: relative;
 }
 .navigation{
     box-shadow: 0px 0px 24px 0px #EAEAEAB2;
@@ -690,7 +691,7 @@ li {
     width: 75%;
 }
 .listing ul li{
-    list-style-type: decimal;
+    list-style-type: none;
     margin-bottom: 14px;
     color: #7B7E81;
 }
@@ -726,6 +727,35 @@ li {
 }
 
 .policyActive{
+    color: var(--color-blue) !important;
+    position: relative;
+}
+.policyActive::after{
+    border-bottom: 1px solid var(--color-blue);
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+}
+.navbar-list li a::before{
+    content: "";
+    background-color: var(--color-blue);
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+.navbar-list li a:hover::before{
+    opacity: 1;
+    right: 0;
+    width: 100%;
+}
+.navbar-list li a:hover{
     color: var(--color-blue) !important;
 }
 
@@ -771,6 +801,13 @@ li {
 
 
 @media screen and (max-width:800px){
+    .listing {
+        width: 30%;
+        padding: 19px 18px;
+    }
+    .policy_row {
+        gap: 25px;
+    }
     .partner-sec_col img{
         width: 83%;
         height: 75px;
@@ -886,6 +923,12 @@ li {
 }
 
 @media screen and (max-width:767px){
+    .navbar-toggler:focus {
+        box-shadow: unset !important;
+    }
+    .navbar-list li a::before{
+        display: none;
+    }
     .listing{
         position: unset;
     }
@@ -899,8 +942,11 @@ li {
         font-size: 16px;
     }
     .button {
-        font-size: 15px;
+        font-size: 13px;
         padding: 8.5px 11.4px;
+    }
+    .testimonial .owl-dots {
+        margin-top: 29px !important;
     }
     .banner_img{
         margin-top: 53px;

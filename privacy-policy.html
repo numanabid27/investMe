@@ -8,7 +8,7 @@
     <!-- stylesheet -->
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
-    <title>Privacy Policy</title>
+    <title>InvestMe | Privacy Policy</title>
 </head>
 <body>
     <!-- header -->
@@ -53,7 +53,7 @@
                     <p>This Privacy Policy applies to all users of the InvestMe app/dashboard ("we" or "us"). By using our platform, you agree to our commitment to safeguarding your data and ensuring confidentiality. Please review this policy carefully to understand how we collect, use, and protect your information.</p>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <img src="./assets/images/policy.png" alt="">
+                    <img src="./assets/images/policy.png" alt="investMe">
                 </div>
             </div>
         </div>
@@ -65,12 +65,12 @@
             <div class="d-flex policy_row">
                 <div class="listing">   
                     <ul>
-                        <li><a href="#list">Introduction</a></li>
-                        <li><a href="#info">Collection Of Personal Information</a></li>
-                        <li><a href="#use">Use Of Personal Information</a></li>
-                        <li><a href="#sharing">Sharing Your Information</a></li>
-                        <li><a href="#security">Security</a></li>
-                        <li><a href="#policy">Changes to this Privacy Policy</a></li>
+                        <li><a href="#list">1. Introduction</a></li>
+                        <li><a href="#info">2. Collection Of Personal Information</a></li>
+                        <li><a href="#use">3. Use Of Personal Information</a></li>
+                        <li><a href="#sharing">4. Sharing Your Information</a></li>
+                        <li><a href="#security">5. Security</a></li>
+                        <li><a href="#policy">6. Changes to this Privacy Policy</a></li>
                     </ul>
                 </div>  
                 <div class="text_list">
@@ -108,13 +108,12 @@
         
     </section>
 
-   
     <!-- footer -->
     <footer class="footer_bg">
         <div class="container">
             <div class="row footer_row">
                 <div class="col-lg-3 footer_col-1">
-                    <img src="./assets/images/logo.svg" alt="">
+                    <img src="./assets/images/logo.svg" alt="investMe">
                     <p>InvestMe provides interest-free, profit-based financing solutions aligned with Islamic finance principles for businesses and ethical investors.</p>
                 </div>
                 <div class="col-lg-2 col-md-6 footer_list">
@@ -140,11 +139,11 @@
                 <div class="col-lg-3 footer_list col-md-6">
                     <h6 class="font-600">Contact</h6>
                     <a href="#" class="d-flex align-items-center gap-3">
-                        <img src="./assets/images/contact-3.svg" alt="">
+                        <img src="./assets/images/contact-3.svg" alt="investMe">
                         support@investme.com
                     </a>
-                    <a href="#" class="d-flex align-items-center gap-3"><img src="./assets/images/contact-2.svg" alt=""> +1-800-123-4567</a>
-                    <a href="#" class="d-flex align-items-center gap-3"><img src="./assets/images/contact-1.svg" alt=""> 123 Main Street, Suite 400, City, State, ZIP Code</a>
+                    <a href="#" class="d-flex align-items-center gap-3"><img src="./assets/images/contact-2.svg" alt="investMe"> +1-800-123-4567</a>
+                    <a href="#" class="d-flex align-items-center gap-3"><img src="./assets/images/contact-1.svg" alt="investMe"> 123 Main Street, Suite 400, City, State, ZIP Code</a>
                 </div>
             </div>
             <p class="text-center pt-4 tagLine">© 2024 InvestMe. All rights reserved.</p>
@@ -154,44 +153,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
-            document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function() {
             const sections = document.querySelectorAll('.text_list ul li');
             const navLinks = document.querySelectorAll('.listing ul li a');
-
-          
-
+    
             const options = {
                 root: null,
-                rootMargin: "0px",
-                threshold: 0.5  // Adjust threshold as needed
+                rootMargin: "-20% 0px -50% 0px",
+                threshold: 0
             };
-
+    
             let observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Remove active class from all links
                         navLinks.forEach(link => {
                             link.classList.remove('policyActive');
                         });
-
-                        // Add active class to the current link
+    
                         const id = entry.target.id;
                         const activeLink = document.querySelector(`a[href="#${id}"]`);
+    
                         if (activeLink) {
                             activeLink.classList.add('policyActive');
                         }
                     }
                 });
             }, options);
-
+    
             sections.forEach(section => {
                 observer.observe(section);
             });
-        }); 
-
+        });
     </script>
-
-    </script>
-   
+    
 </body>
 </html>
